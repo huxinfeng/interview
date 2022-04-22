@@ -21,5 +21,9 @@ export default defineConfig({
    * 配置是否让生成的文件包含 hash 后缀，通常用于增量发布和避免浏览器加载缓存
    */
   hash: true,
+  /**
+   * 路由要改成 hash路由，不然打开页面也是空白的。
+   */
+  history: { type: 'hash' },
   // more config: https://d.umijs.org/config
 });
