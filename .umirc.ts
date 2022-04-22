@@ -25,5 +25,15 @@ export default defineConfig({
    * 路由要改成 hash路由，不然打开页面也是空白的。
    */
   history: { type: 'hash' },
+  /**
+   * 开启webpack5
+   */
+  webpack5: {},
+  /**
+   * 启用 sitemap.xml 自动生成特性
+   */
+  sitemap: {
+    hostname: 'https://huxinfeng.gitee.io',
+  },
   // more config: https://d.umijs.org/config
 });
