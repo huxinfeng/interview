@@ -35,5 +35,12 @@ export default defineConfig({
   sitemap: {
     hostname: 'https://huxinfeng.gitee.io',
   },
+  /**
+   * 国际化
+   */
+  locales: [
+    ['zh-CN', '中文'],
+    ['en-US', 'English'],
+  ],
   // more config: https://d.umijs.org/config
 });
