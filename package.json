@@ -11,13 +11,15 @@
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "module": "es/index.js",
   "typings": "es/index.d.ts",
   "gitHooks": {
     "pre-commit": "lint-staged",
-    "commit-msg": "commitlint --config .commitlintrc.js -e -V"
+    "commit-msg": "commitlint --config .commitlintrc.js -e -V",
+    "post-receive": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
@@ -38,6 +40,7 @@
     "@types/jest": "^27.0.3",
     "@umijs/fabric": "^2.8.1",
     "@umijs/test": "^3.0.5",
+    "conventional-changelog-cli": "^2.2.2",
     "dumi": "^1.1.0",
     "father-build": "^1.17.2",
     "gh-pages": "^3.0.0",
