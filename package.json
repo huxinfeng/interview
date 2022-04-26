@@ -18,8 +18,7 @@
   "typings": "es/index.d.ts",
   "gitHooks": {
     "pre-commit": "lint-staged",
-    "commit-msg": "commitlint --config .commitlintrc.js -e -V",
-    "post-receive": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    "commit-msg": "commitlint --config .commitlintrc.js -e -V"
   },
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
