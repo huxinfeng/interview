@@ -28,6 +28,12 @@
       "prettier --parser=typescript --write"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huxinfeng/interview",
+    "branch": "master",
+    "platform": "github"
+  },
   "dependencies": {
     "react": "^16.12.0 || ^17.0.0"
   },
