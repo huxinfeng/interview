@@ -29,6 +29,8 @@ export default defineConfig({
    * 开启webpack5
    */
   webpack5: {},
+  /** 开启mfsu */
+  mfsu: {},
   /**
    * 启用 sitemap.xml 自动生成特性
    */
